@@ -25,7 +25,7 @@ export const presets = {
         fontSize: spacing[7]
     },
     h3: {
-        ...BASE,
+        ...BASE_BOLD,
         fontSize: spacing[6]
     },
     h4: {

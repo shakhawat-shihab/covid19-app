@@ -3,7 +3,9 @@ import { View, StyleSheet, TouchableOpacity, Image, SafeAreaView } from 'react-n
 import Text from '../../components/Text/Text';
 import { color } from '../../theme/color';
 import { spacing } from '../../theme/spacing';
-import Icon from 'react-native-vector-icons/Feather';
+// import { Icon as FeatherIcon } from 'react-native-vector-icons/Feather';
+// import { Icon as AntDesignIcon } from 'react-native-vector-icons/AntDesign';
+import { Feather, AntDesign, Ionicons, MaterialCommunityIcons, FontAwesome5 } from '@expo/vector-icons';
 import DropDownPicker from 'react-native-dropdown-picker';
 import { LinearGradient } from "expo-linear-gradient";
 import { Animated } from "react-native";
@@ -44,7 +46,7 @@ const Home = () => {
                         <View style={{ width: "100%", flexDirection: 'row', justifyContent: 'space-around' }}>
                             <Image source={require('../../images/usa.png')}></Image>
                             <Text preset='small' style={[styles.buttonText, { paddingLeft: spacing[1], color: color.text, }]}>USA</Text>
-                            <Icon name="chevron-down" size={20} color='#61688B' />
+                            <AntDesign name="caretdown" size={20} color='#61688B' />
                         </View>
 
                     </TouchableOpacity>
@@ -74,7 +76,7 @@ const Home = () => {
                     // onPress={() => {    }}
                     >
                         <View style={{ flexDirection: 'row' }}>
-                            <Icon name="phone-call" size={20} color='white' />
+                            <Feather name="phone-call" size={20} color='white' />
                             <Text preset='small' style={[styles.buttonText, { paddingLeft: spacing[1] }]}>Call Now</Text>
                         </View>
                     </TouchableOpacity>
@@ -83,7 +85,7 @@ const Home = () => {
                     // onPress={() => {    }}
                     >
                         <View style={{ flexDirection: 'row' }}>
-                            <Icon name="message-circle" size={20} color='white' />
+                            <Feather name="message-circle" size={20} color='white' />
                             <Text preset='small' style={[styles.buttonText, { paddingLeft: spacing[1] }]}>Send SMS</Text>
                         </View>
                     </TouchableOpacity>

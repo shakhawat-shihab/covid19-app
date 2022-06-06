@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, StyleSheet, TouchableOpacity, Image, SafeAreaView } from 'react-native';
+import { View, StyleSheet, TouchableOpacity, Image, SafeAreaView, FlatList, ScrollView } from 'react-native';
 import Text from '../../components/Text/Text';
 import { color } from '../../theme/color';
 import { spacing } from '../../theme/spacing';
@@ -21,7 +21,7 @@ const Home = () => {
     ]);
 
     return (
-        <SafeAreaView style={styles.container}>
+        <ScrollView style={styles.container}>
             <View style={styles.upperSection}>
                 {/* <Text preset='h2' >Open up App.js to start working on your app!</Text> */}
                 <View style={[styles.rows, {}]} >
@@ -121,12 +121,12 @@ const Home = () => {
                                 <Text preset='small' style={{ marginTop: spacing[3], color: 'white', fontWeight: 'bold' }}>Do your own Test</Text>
                                 <Text preset='small' style={{ marginTop: spacing[1], color: 'white', lineHeight: 22 }} >Follow the instructions to do your own test.</Text>
                             </View>
-
                         </AnimatedLinearGradient>
                     </View>
                 </View>
+
             </View>
-        </SafeAreaView >
+        </ScrollView  >
     );
 };
 const styles = StyleSheet.create({

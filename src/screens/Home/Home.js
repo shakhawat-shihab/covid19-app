@@ -135,7 +135,7 @@ const styles = StyleSheet.create({
         flexDirection: 'column'
     },
     upperSection: {
-        height: '45%',
+        // height: '45%',
         width: '100%',
         paddingHorizontal: spacing[5],
         borderBottomLeftRadius: 50,
